@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
 .container{
-  width: 1100px;
+  width: 100vw;
   height: 95vh;
+  justify-content: center;
   display: flex;
   align-items: center;
-  background: url('./assets/img/pattern-curve.svg') no-repeat;
+  background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-curve.svg') no-repeat;
   background-position: left bottom;
 }
 .slider{
   display: flex;
   align-items: center;
-  flex-direction: row;
-  
+  flex-flow: row wrap; 
 }
+
 /*paragraph*/
 .textSlider{
   display: flex;
-  align-items: stretch;
   flex-direction: column;
-  background: url('./assets/img/pattern-quotes.svg');
+  background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-quotes.svg');
   background-position-x: 3em;
-  margin-left: 10em;
   margin-right: -100px;
   background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@ span{
   .imgb{
     position: absolute;
     display: block;
-    background: url('./assets/img/pattern-bg.svg') no-repeat;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-bg.svg') no-repeat;
     background-size: 100%;
     top: -45px;
     left: -50px;
@@ -80,9 +80,11 @@ span{
   #btnnext{
     margin-left: -3px;
     border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   #btnback{
     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
 /* footer */
@@ -94,4 +96,264 @@ span{
   color: rgb(3, 135, 175);
   text-decoration: none;
   margin-left: 5px;
+}
+/*movile*/
+@media screen and (max-width: 768px){
+  .container{
+    display: flex;
+    height: 98vh;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+  }
+  .textSlider{
+    display: flex;
+    text-align: center;
+    padding: 3em;
+    order: 3;
+  }
+  article{
+    margin-right: 2.5em;
+  }
+  span{
+    margin-right: 3em;
+  }
+  span strong{
+    display: flex;
+    order: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+}
+@media screen and (max-width: 375px){
+  .container{
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-curve.svg') no-repeat;
+    background-size: 80%;
+    background-position: left bottom;
+    overflow: hidden;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .imgb{
+    position: absolute;
+    display: block;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-bg.svg') no-repeat;
+    background-size: 89%;
+    top: -20px;
+    left: -20px;
+    width: 280px;
+    height: 300px;
+  }
+ 
+  img{
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .textSlider{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-quotes.svg');
+    background-position-x: 13em;
+    background-position-y: 3em;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
+  article{
+    font-size: 15px;
+    margin-right: 7.4em;
+  }
+  span{
+    margin-right: 8em;
+  }
+  span strong{
+    display: flex;
+    order: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+  .attribution{
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+  }
+  button{
+    width: 4em;
+    border: solid #fff;
+    padding: 0.5em;
+    background: #fff;
+    outline: none;
+  }
+  .btnSlider{
+    margin-top: -10px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+
+}
+
+@media screen and (max-width: 411px){
+  .container{
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-curve.svg') no-repeat;
+    background-size: 80%;
+    background-position: left bottom;
+    overflow: hidden;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .imgb{
+    position: absolute;
+    display: block;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-bg.svg') no-repeat;
+    background-size: 89%;
+    top: -20px;
+    left: -20px;
+    width: 280px;
+    height: 300px;
+  }
+ 
+  img{
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .textSlider{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-quotes.svg');
+    background-position-x: 13em;
+    background-position-y: 3em;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
+  article{
+    font-size: 15px;
+    margin-right: 7.4em;
+  }
+  span{
+    margin-right: 8em;
+  }
+  span strong{
+    display: flex;
+    order: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+  .attribution{
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+  }
+  button{
+    width: 4em;
+    border: solid #fff;
+    padding: 0.5em;
+    background: #fff;
+    outline: none;
+  }
+  .btnSlider{
+    margin-top: -10px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+
+}
+
+@media screen and (max-width: 414px){
+  .container{
+    display: flex;
+    height: 96vh;
+    justify-content: center;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-curve.svg') no-repeat;
+    background-size: 80%;
+    background-position: left bottom;
+    overflow: hidden;
+  }
+  .slider{
+    display: flex;
+    justify-content: center;
+    font-size: small;
+  }
+
+  .imgb{
+    position: absolute;
+    display: block;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-bg.svg') no-repeat;
+    background-size: 89%;
+    top: -20px;
+    left: -20px;
+    width: 280px;
+    height: 300px;
+  }
+ 
+  img{
+    height: 200px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+  }
+  .textSlider{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    background: url('https://raw.githubusercontent.com/derian-rods/Coding-bootcamp-testimonials-slider/e4cd0263db317e105f114cddfe88a5ac9d2e46ef/src/assets/img/pattern-quotes.svg');
+    background-position-x: 13em;
+    background-position-y: 3em;
+    background-repeat: no-repeat;
+    background-size: 50px;
+  }
+  article{
+    font-size: 15px;
+    margin-right: 7.4em;
+  }
+  span{
+    margin-right: 8em;
+  }
+  span strong{
+    display: flex;
+    order: 1;
+    justify-content: center;
+    text-align: center;
+    padding: 0.3em;
+  }
+  .attribution{
+    display: flex;
+    font-size: smaller;
+    justify-content: center;
+  }
+  button{
+    width: 4em;
+    border: solid #fff;
+    padding: 0.5em;
+    background: #fff;
+    outline: none;
+  }
+  .btnSlider{
+    margin-top: -10px;
+    margin-left: 40px;
+    z-index: 1;
+  }
+
 }
